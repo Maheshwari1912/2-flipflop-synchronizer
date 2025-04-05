@@ -1,0 +1,21 @@
+module two_ff_sync_tb(
+reg async_data_in;
+reg clk;
+reg rst;
+wire sync_data_out;
+two_ff_sync dut(clk,rst,async_data_in,sync_data_out);
+always #5 clk=~clk;
+initial begin
+async_data_in=0;
+clk=0;
+rst=1;
+#10 rst=0;
+#20 async_data_in=1;
+#10 async_data_in=0;
+#20 async_data_in=1;
+#10 async_data_in=0;
+#30 async_data_in=1;
+#10 async_data_in=0;
+#50 $finish;
+end
+endmodule
