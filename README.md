@@ -40,6 +40,10 @@ different clock domains.
 
 **simulation results:**
 
+![image](https://github.com/user-attachments/assets/fa91f780-431f-4424-a8fc-d68f9cc936c0)
 
 
 **schematic:**
+
+![image](https://github.com/user-attachments/assets/dde716bd-f01f-42cd-9a48-be7eeef767a5)
+
